@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- 
+    Módulo:     LMSGI 
+    Fecha:      06/03/2024 
+    Autor:      Dorkaitz Garcia 
+    UD:         04
+    Tarea:      Tarea Evaluativa 02
+    Detalles:   Documento .xsl que sirve de plantilla para crear
+                la web partidos.html los datos recogidos en el archivo partidos.xml.
+ -->
+
 <!-- Espacio de nombres -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0">
 <xsl:output encoding="utf-8" method="html" doctype-system="about:legacy-compat"/>
@@ -38,11 +48,12 @@
                         <tr>
                             <td><xsl:value-of select="equipos/local"/> - <xsl:value-of select="equipos/visitante"/></td>
                             <td><xsl:value-of select="fecha"/></td>
+                            <!-- En volleyball no se puede empatar, por lo que usaré '<' o '>' -->
                             <xsl:if test="equipos/visitante/@puntuacion>equipos/local/@puntuacion">
-                                <td class="azul"><xsl:value-of select="//local/@puntuacion"/> - <xsl:value-of select="//visitante/@puntuacion"/></td>
+                                <td class="azul"><xsl:value-of select="equipos/local/@puntuacion"/> - <xsl:value-of select="equipos/visitante/@puntuacion"/></td>
                             </xsl:if>
                             <xsl:if test="equipos/local/@puntuacion>equipos/visitante/@puntuacion">
-                                <td><xsl:value-of select="//local/@puntuacion"/> - <xsl:value-of select="//visitante/@puntuacion"/></td>
+                                <td><xsl:value-of select="equipos/local/@puntuacion"/> - <xsl:value-of select="equipos/visitante/@puntuacion"/></td>
                             </xsl:if>
                         </tr>
                     </xsl:for-each>

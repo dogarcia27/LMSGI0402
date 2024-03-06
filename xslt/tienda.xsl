@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- 
+    Módulo:     LMSGI 
+    Fecha:      06/03/2024 
+    Autor:      Dorkaitz Garcia 
+    UD:         04
+    Tarea:      Tarea Evaluativa 02
+    Detalles:   Documento .xsl que sirve de plantilla para crear
+                la web tienda.html los datos recogidos en el archivo tienda.xml.
+ -->
+
 <!-- Espacio de nombres -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0">
 <xsl:output encoding="utf-8" method="html" doctype-system="about:legacy-compat"/>

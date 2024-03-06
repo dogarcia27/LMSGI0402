@@ -1,3 +1,14 @@
+/* 
+    Módulo:     LMSGI 
+    Fecha:      06/03/2024 
+    Autor:      Dorkaitz Garcia 
+    UD:         04
+    Tarea:      Tarea Evaluativa 02
+    Detalles:   Documento .css que sirve para dar formato a todas las web creadas a partir
+                de los datos recogidos en los archivos .xml y las plantillas definidas en
+				los archivos .xsl.
+ */
+
 body {
 	margin:0;
 	padding: 0;

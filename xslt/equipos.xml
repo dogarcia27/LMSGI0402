@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    Módulo:     LMSGI 
+    Fecha:      06/03/2024 
+    Autor:      Dorkaitz Garcia 
+    UD:         04
+    Tarea:      Tarea Evaluativa 02
+    Detalles:   Documento .xml del que se extraen los datos para crear
+                la web equipos.html a través de la plantilla equipos.xsl.
+ -->
+
 <!-- XSLT asociado -->
 <?xml-stylesheet type="text/xsl" href="equipos.xsl"?> 
 
